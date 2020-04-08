@@ -34,7 +34,7 @@ class PiggySkin extends Skin
             throw new InvalidArgumentException("Skin Image Width must be 64 or greater");
         }
         if ($this->data->getSkinImage()->getHeight() < 32) {
-            throw new InvalidArgumentException("Skin Immage Height must be 32 or greater");
+            throw new InvalidArgumentException("Skin Image Height must be 32 or greater");
         }
         if (strlen($this->data->getSkinImage()->getData()) < 64 * 32 * 4) {
             throw new InvalidArgumentException("Skin Image Data must be 8192 bytes or greater in length");
